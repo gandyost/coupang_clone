@@ -1,0 +1,319 @@
+*{margin: 0; padding: 0;}
+
+/*헤더 회색바 부분*/
+
+#header_up{
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px; padding-right: 10px;
+    height: 34.5px;
+}
+
+.header_up_menu{
+    display: flex;
+    margin: 5px;
+}
+
+.header_up_menu > p{
+    padding: 5px;
+    font-size: 12px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#header_container{
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    grid-template-rows: 110px;
+}
+
+/*회색 바 부분 입점신청 호버 메뉴*/
+#upHover1{
+    display: none;
+    background-color: white;
+    flex-direction: column;
+    position: absolute;
+    top: 33px;
+    left: 46px;
+    box-shadow: 1px 1px 1px 1px;
+    padding: 15px;
+}
+
+#upHover1:hover{
+    display: flex;
+}
+
+#startUp:hover + #upHover1{
+    display: flex;
+}
+
+#upHover1 >p{
+    font-size: 12px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+/* 회색 바 부분 고객센터 호버 메뉴*/
+#upHover2:hover{
+    display: flex;
+}
+
+#center:hover + #upHover2{
+    display: flex;
+}
+
+#upHover2 >p{
+    font-size: 12px;
+    margin: 7px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+#upHover2{
+    display: none;
+    background-color: white;
+    flex-direction: column;
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    box-shadow: 1px 1px 1px 1px;
+    padding: 15px;
+}
+
+/* 파란색 카테고리 부분*/
+#category{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(91, 157, 255);
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+#category > p{
+    display: flex;
+}
+
+#hamburger{
+    display: inline;
+    font-size: 50px;
+}
+
+#categs{
+    display: inline;
+    font-size: 13px;
+}
+
+
+/* 파란색 카테고리 호버 디자인 */
+
+#upHover3{
+    display: none;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    position: absolute;
+    top: 144px;
+    left: 0px;
+    width: 140px;
+    box-shadow: 1px 1px 1px 1px;
+    padding: 15px;
+}
+
+#upHover3 >p{
+    font-size: 12px;
+    text-align: left;
+    padding: 7px;
+    cursor: pointer;
+    padding-left: 11px;
+    text-decoration: none;
+}
+
+#upHover3:hover{
+    display: flex;
+}
+
+#upHover3 >p:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+#category:hover > #upHover3{
+    display: flex;
+}
+
+/* 메인로고+검색창+마이페이지 */
+#topMenuUp{
+    display: grid;
+    grid-template-columns: 210px 1fr 150px;
+}
+
+/* 메인 타이틀 디자인 */
+#mainTitle{
+    display: inline;
+    font-size: 50px;
+    margin: 15px;
+    margin-bottom: 5px;
+    width: fit-content;
+}
+
+/* 검색창 디자인 */
+#searchBox{
+    display: grid;
+    grid-template-columns: 120px 1fr 30px;
+    border: 2.5px solid skyblue;
+    margin-top: 25px;
+    width: 100%;
+    height: 35px;
+}
+
+/* 검색창 드롭다운 부분 디자인 */
+#searchBoxCategory{
+    /* width: 100px; */
+    height: 15px;
+    padding: 10px;
+    font-size: 13px;
+    border-right: 1px solid rgb(202, 202, 202);
+}
+
+/* 겁색창 드롭다운 클릭 부분 디자인 */
+#searchBoxDropdownClick{
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 검색창 드롭다운 메뉴 디자인 */
+#searchBoxDropdown{
+    display: none;
+    background-color: white;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 320px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 1px 1px 1px 1px;
+    padding: 15px;
+}
+
+#searchBoxDropdown >p{
+    margin: 7px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#searchBoxDropdown >p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+/* 검색창 인풋 박스 디자인 */
+#searchBoxTextBox > input{
+    padding-left: 8px;
+    font-size: 13px;
+    margin: 5px;
+    margin-top: 10px;
+    min-width: 370px;
+    border: none;
+}
+
+#searchBoxTextBox > input:focus{
+    outline: none;
+}
+
+#searchIcon{
+    font-size: 30px;
+}
+
+/* 마이쿠팡, 장바구니 부분 디자인*/
+#myPage{
+    padding-top: 10px;
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 60px 60px;
+    font-size: 11px;
+    text-align: center;
+}
+/*마이페이지*/
+#myPageMe{
+    padding-top: 10px;
+    cursor: pointer;
+}
+/*장바구니*/
+#myPageKart{
+    padding-top: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+/* 내브바 디자인 */
+#topMenuDown{
+    display: flex;
+    font-size: 12px;
+    min-width: 950px;
+}
+
+#topMenuDown > div{
+    margin: 10px;
+    margin-top: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#topMenuDown > div{
+    text-decoration: none;
+}
+
+#topMenuDown > div:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/*광고 부분 디자인*/
+#commerse{
+    background-color: bisque;
+    height: 450px;
+    text-align: center;
+}
+
+#commersePicture{
+    height: 450px;
+}
+
+#commerse > h1{
+    display: inline;
+    margin-top: 200px;
+}
+
+/*광고 우측 배너 버튼*/
+#commerseBanner{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    font-size: 13px;
+    position: absolute;
+    right: 8px;
+    top: 200px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px gray;
+    cursor: pointer;
+}
+
+#commerseBanner > div{
+    padding: 5px;
+    text-align: left;
+    height: 46px;
+    border: 1px solid rgb(246, 246, 246);
+}
+
+#commerseBanner > div:hover{
+    border: 1px solid blue;
+}
